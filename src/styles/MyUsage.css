@@ -1,0 +1,44 @@
+.my-usage-page {
+    animation: fadeIn 0.3s ease-out;
+}
+
+.usage-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.usage-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    transition: all var(--transition-base);
+}
+
+.usage-card:hover {
+    border-color: var(--primary);
+    transform: translateX(4px);
+}
+
+.usage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.usage-header h3 {
+    margin: 0;
+    font-size: 1.125rem;
+}
+
+.usage-details p {
+    margin: var(--spacing-xs) 0;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.usage-details strong {
+    color: var(--text-primary);
+}
